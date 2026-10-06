@@ -1,255 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santu Sau - Web Developer & Full Stack Developer Portfolio">
+    <title>Santu Sau | Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <title>Student Portfolio</title>
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
     <!-- Navbar -->
-    <header>
-      <nav class="navbar">
-        <h2 class="logo">My Portfolio</h2>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Santu<span>.</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <a href="assets/Santu-Sau-CV.pdf" download class="btn btn-outline nav-cv-btn">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Hero Section -->
+    <header id="home" class="hero section">
+        <div class="hero-content hidden">
+            <h3 class="greeting">Hi, I'm</h3>
+            <h1 class="name">Santu Sau</h1>
+            <h2 class="role">Web Developer & Full Stack Developer</h2>
+            <p class="intro">
+                I build responsive, modern, and high-performance web applications. 
+                With hands-on experience in PHP, Laravel, MySQL, JavaScript, and modern web technologies, 
+                I turn complex problems into elegant solutions.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <div class="cv-wrapper">
+                    <a href="assets/Santu-Sau-CV.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <span class="cv-text">Download my latest CV</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="welcome">Hello, I'm</p>
-
-        <h1>Your Name</h1>
-
-        <h2>Student & Web Developer</h2>
-
-        <p>
-          I am a passionate student interested in web development, programming
-          and learning new technologies.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn outline">Contact Me</a>
-        </div>
-      </div>
-
-      <div class="hero-image">
-        <div class="profile-circle">
-          <span>Photo</span>
-        </div>
-      </div>
-    </section>
-
     <!-- About Section -->
-    <section id="about" class="section">
-      <h2 class="section-title">About Me</h2>
-
-      <div class="about-content">
-        <div>
-          <h3>Who I Am</h3>
-
-          <p>
-            I am a BCA student with an interest in web development and software
-            development. I enjoy creating websites, learning programming
-            languages and working on practical projects.
-          </p>
-
-          <p>
-            My goal is to become a professional full-stack web developer and
-            build useful and user-friendly applications.
-          </p>
+    <section id="about" class="about section">
+        <div class="container hidden">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am an aspiring Full Stack Developer with a strong foundation in both frontend and backend technologies. 
+                        My journey in web development started with a curiosity for how things work on the internet, which quickly turned into a passion for building robust web applications.
+                    </p>
+                    <p>
+                        My career goal is to create impactful digital experiences and scale reliable backend architectures. 
+                        I enjoy solving logical problems, optimizing database performance, and designing intuitive user interfaces.
+                    </p>
+                </div>
+                <div class="education-card glass-card">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <h4>BCA</h4>
+                    <p class="institution">Contai College of Learning & Management Science (MAKAUT)</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Contai, West Bengal, India</p>
+                    <p class="year"><i class="far fa-calendar-alt"></i> Expected Graduation: 2027</p>
+                </div>
+            </div>
         </div>
-
-        <div class="about-info">
-          <p><strong>Name:</strong> Your Name</p>
-          <p><strong>Course:</strong> BCA</p>
-          <p><strong>College:</strong> Your College Name</p>
-          <p><strong>Location:</strong> West Bengal, India</p>
-        </div>
-      </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
-      <h2 class="section-title">My Skills</h2>
+    <section id="skills" class="skills section">
+        <div class="container hidden">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                
+                <!-- Frontend -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                    </div>
+                </div>
 
-      <div class="skills-container">
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <p>Creating structured and semantic web pages.</p>
-        </div>
+                <!-- Backend -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                    </div>
+                </div>
 
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Designing responsive and attractive websites.</p>
-        </div>
+                <!-- Database -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                    </div>
+                </div>
 
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>Adding interactive functionality to websites.</p>
-        </div>
+                <!-- Programming -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-c"></i> C</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                    </div>
+                </div>
 
-        <div class="skill-card">
-          <h3>PHP</h3>
-          <p>Developing dynamic and database-driven websites.</p>
-        </div>
+                <!-- Tools & Platforms -->
+                <div class="skill-category glass-card full-width">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag jira-tag"><i class="fab fa-jira"></i> Jira</span>
+                        <span class="skill-tag"><i class="fas fa-code-branch"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> XAMPP</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> phpMyAdmin</span>
+                    </div>
+                    <p class="tool-desc"><strong>Jira</strong> — Issue Tracking, Task Management & Agile Project Management</p>
+                </div>
 
-        <div class="skill-card">
-          <h3>MySQL</h3>
-          <p>Managing and working with databases.</p>
+            </div>
         </div>
-
-        <div class="skill-card">
-          <h3>Laravel</h3>
-          <p>Building modern web applications using PHP Laravel.</p>
-        </div>
-      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2 class="section-title">My Projects</h2>
+    <section id="projects" class="projects section">
+        <div class="container hidden">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
 
-      <div class="projects-container">
-        <div class="project-card">
-          <div class="project-image">Project 01</div>
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <span class="project-type">Real-world E-commerce Website</span>
+                        <h3>Siddha Art Creation</h3>
+                        <p class="project-desc">A handcrafted products e-commerce website developed collaboratively with one teammate.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://siddhaartcreation.com" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Project</a>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="project-content">
-            <h3>Student Management System</h3>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <span class="project-type">Cafe Management System</span>
+                        <h3>Delicious Cafe</h3>
+                        <p class="project-desc">A web-based cafe management and ordering system with booking, ordering, payment, and admin functionality.</p>
+                        <div class="tech-stack">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://delicious.great-site.net/cafe/" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Project</a>
+                        </div>
+                    </div>
+                </div>
 
-            <p>
-              A web-based application for managing student information and
-              academic records.
-            </p>
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <span class="project-type">Note Sharing Platform</span>
+                        <h3>FellowFinds</h3>
+                        <p class="project-desc">A platform where students can share, sell, and purchase academic notes.</p>
+                        <div class="tech-stack">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://fellowfinds.great-site.net/" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Project</a>
+                        </div>
+                    </div>
+                </div>
 
-            <p class="technology">HTML | CSS | PHP | MySQL</p>
-
-            <a href="#" class="project-btn">View Project</a>
-          </div>
+            </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">Project 02</div>
-
-          <div class="project-content">
-            <h3>Portfolio Website</h3>
-
-            <p>
-              A responsive personal portfolio website to showcase my skills,
-              education and projects.
-            </p>
-
-            <p class="technology">HTML | CSS | JavaScript</p>
-
-            <a href="#" class="project-btn">View Project</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">Project 03</div>
-
-          <div class="project-content">
-            <h3>Web Application</h3>
-
-            <p>
-              A dynamic web application developed as part of academic and
-              practical learning.
-            </p>
-
-            <p class="technology">PHP | Laravel | MySQL</p>
-
-            <a href="#" class="project-btn">View Project</a>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section education-section">
-      <h2 class="section-title">Education</h2>
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container hidden">
+            <h2 class="section-title">Achievements & Milestones</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="timeline-content">
+                        <h3>Smart India Hackathon (SIH)</h3>
+                        <p>Selected for the Grand Finale of the Smart India Hackathon.</p>
+                    </div>
+                </div>
 
-      <div class="education-container">
-        <div class="education-card">
-          <h3>Bachelor of Computer Applications (BCA)</h3>
-          <p>Contai College Of lerning & Management Science</p>
-          <span>2024 - 2027</span>
-        </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon"><i class="fas fa-medal"></i></div>
+                    <div class="timeline-content">
+                        <h3>Olive Academy Hackathon 2026</h3>
+                        <p>Participated as Team Leader. Co-developed FellowFinds as a working prototype within a record 8 hours.</p>
+                    </div>
+                </div>
 
-        <div class="education-card">
-          <h3>Higher Secondary</h3>
-          <p>Your School Name</p>
-          <span>2024</span>
-        </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon"><i class="fas fa-award"></i></div>
+                    <div class="timeline-content">
+                        <h3>Intra-College Hackathon</h3>
+                        <p>Secured 2nd place in a highly competitive intra-college hackathon event.</p>
+                    </div>
+                </div>
 
-        <div class="education-card">
-          <h3>Secondary</h3>
-          <p>Your School Name</p>
-          <span>2022</span>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-      <h2 class="section-title">Contact Me</h2>
+    <section id="contact" class="contact section">
+        <div class="container hidden">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p>Ready to discuss your next project or potential opportunities? Feel free to reach out!</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:contact@example.com">contact@example.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Contai, West Bengal, India</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Let's Connect</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
 
-          <p>
-            If you have any questions or opportunities, feel free to contact me.
-          </p>
+                <form id="contact-form" class="contact-form glass-card">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Hello, I'd like to talk about..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
 
-          <p><strong>Email:</strong> yourmail@gmail.com</p>
-          <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-          <p><strong>Location:</strong> West Bengal, India</p>
+            </div>
         </div>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-
-          <input type="email" placeholder="Your Email" required />
-
-          <input type="text" placeholder="Subject" required />
-
-          <textarea rows="5" placeholder="Your Message"></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <h3>Santu Sau</h3>
-        <p>BCA Student & Web Developer</p>
-        <div class="footer-links">
-          <a href="#home">Home</a> <a href="#about">About</a>
-          <a href="#projects">Projects</a> <a href="#contact">Contact</a>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Santu Sau. All rights reserved.</p>
+                <div class="footer-cta">
+                    <a href="assets/Santu-Sau-CV.pdf" download class="footer-link">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="footer-social">
-          <a href="#">GitHub</a> <a href="#">LinkedIn</a> <a href="#">Email</a>
-        </div>
-        <div class="footer-bottom">
-          <p>© 2026 Santu Sau. All Rights Reserved.</p>
-        </div>
-      </div>
     </footer>
-  </body>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
